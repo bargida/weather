@@ -13,7 +13,7 @@ async function showWeather(city){
     
     var data=await response.json()
    
-    window.location.href="data.php?city="+data.name+"&temperature="+data.main.temp+"&weather="+data.weather[0].main
+    window.location.href="data.php?city="+data.name+"&temperature="+data.main.temperature+"&weather="+data.weather[0].main
     
 
 }
@@ -24,29 +24,3 @@ searcbtn.addEventListener("click",()=>{
 
 
 
-
-// const searchbox=document.querySelector(".search input");
-
-// const searchbtn=document.querySelector(".search button");
-
-
-
-
-
-// async function showWeather(city){
-//     const response=await fetch(apiurl + city +`&appid=${apikey}`)
-//     var data=await response.json()
-
-
-//     window.location.href="datas.php?city="+data.name+"&temperature="+data.main.temperature+"&weather="+data.weather[0].main
-// }
-    
-
-
-// searchbtn.addEventListener("click",()=>{
-//     showWeather(searchbox.value);
-
-
-// });
-
-// showWeather("Basildon")
